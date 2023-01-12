@@ -1,0 +1,195 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+}
+
+/* Typography */
+
+h2{
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+i{
+    padding-right: 0.40em;
+    font-size: 1.25rem;
+}
+
+
+/* Navigation */
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    margin: 0.60em 1.50em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+li {
+    margin-left: 1.25em;
+    text-transform: uppercase;
+    font-size: 0.80rem;
+    font-weight: 600;
+    
+}
+
+.hero{
+    background-image: url(Images/hero-post.png);
+    color: #fff;
+    padding: 6em 1em 1em 2em;
+    background-size: cover;
+    margin-bottom: 1.5em;
+}
+
+.hero-date {
+    font-size: 0.80em;
+    text-transform: uppercase;
+}
+
+.hero h1{
+    font-weight: 700;
+    font-size: 2.10rem;
+    margin: 0.5em 0 0.5em 0;
+    line-height: 1;
+}
+
+.text{
+    font-size: 1.10rem;
+    min-width: 414px;
+}
+
+/* Card Container */
+
+.date,
+.title {
+    margin-bottom: 0;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+
+image {
+object-fit: cover;
+width: 100%;;
+}
+
+.date {
+    font-size: 0.885625rem;
+}
+
+.title{
+    font-size: 1.5rem;
+}
+
+.body {
+    font-size: 1rem;
+    color: #505050;
+    margin-top: 0.50em;
+}
+
+.view {
+    margin-bottom: 2em;
+}
+
+.view-more,
+.view-less {
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.view-more:hover,
+.view-less:hover {
+    cursor: pointer;
+}
+
+/* Footer */
+Footer {
+    background-color: #202020;
+    text-align: center;
+    padding: 1.5em;
+    font-size: 0.75rem;
+}
+
+.footer-text-1{
+color: #ECECEC;
+font-weight: 700;
+margin-bottom: 0;
+}
+
+.footer-text-2 {
+    color: #D7D7D7;
+    font-weight: 300;
+    margin-top: 0.25em;
+}
+
+/* HOME */
+
+.home-hero {
+    padding: 1em 1.25em 1em 1.25em;
+}
+
+.home-hero h1{
+    margin: 0.60em 0;
+}
+
+.home-hero .text {
+    font-size: 1rem;
+    line-height: 150%;
+    color: #151515;
+}
+
+.home-hero .hero-date {
+    padding-bottom: 0.10em;
+    font-size: 0.75rem;
+}
+
+.hero-img {
+    object-fit: cover;
+    border-radius: 1%;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.main-hero h1{
+    font-size: 2rem;
+    margin: 0 auto;
+}
+
+.main-text {
+    padding: 0.50em 0.50em 1em 0.50em;
+}
+
+.main-text h3,
+h3 {
+    font-weight: 700;
+    font-size: 1.05rem;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 1em;
+}

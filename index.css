@@ -7,6 +7,12 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
+    width: 100%;
+}
+
+/* Layout */
+section {
+    background-color: #FAFAFA;
 }
 
 /* Typography */
@@ -31,7 +37,7 @@ nav a{
 }
 
 nav {
-    margin: 0.60em 1.50em;
+    margin: 0.60em 1.75em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,7 +59,7 @@ li {
 }
 
 .hero{
-    background-image: url(Images/hero-post.png);
+    background-image: url(Images/hero-post.jpg);
     color: #fff;
     padding: 6em 1em 1em 2em;
     background-size: cover;
@@ -84,15 +90,15 @@ li {
     margin-bottom: 0;
 }
 
-.card-container {
+.card{
     display: flex;
     flex-direction: column;
     margin: 1em;
+    max-width: 500px;
 }
 
-image {
-object-fit: cover;
-width: 100%;;
+.image {
+width: 100%;
 }
 
 .date {
@@ -126,6 +132,36 @@ width: 100%;;
     cursor: pointer;
 }
 
+.view-less {
+    display: none;
+}
+
+@media (min-width: 414px ) {
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+        padding: 0 2em;
+    }
+
+    .image {
+        width: 100%;
+        height: 272.938px;
+        object-fit: cover;
+    }
+
+    .hero {
+        min-height: 400px;
+        background-size:cover;
+        background-position: 30% 60%;
+        padding: 12em 1em 1em 2em;
+    }
+    .hero .text {
+        max-width: 600px;
+    }
+
+}
+
 /* Footer */
 Footer {
     background-color: #202020;
@@ -148,12 +184,14 @@ margin-bottom: 0;
 
 /* HOME */
 
-.home-hero {
+.home-hero,
+.author {
     padding: 1em 1.25em 1em 1.25em;
 }
 
 .home-hero h1{
     margin: 0.60em 0;
+    font-size: 2rem;
 }
 
 .home-hero .text {
@@ -167,11 +205,14 @@ margin-bottom: 0;
     font-size: 0.75rem;
 }
 
+.hero-img-wrapper {
+    margin: 0 1em;
+}
+
 .hero-img {
     object-fit: cover;
     border-radius: 1%;
     width: 100%;
-    margin-top: 1em;
 }
 
 .main-hero h1{
@@ -180,16 +221,73 @@ margin-bottom: 0;
 }
 
 .main-text {
-    padding: 0.50em 0.50em 1em 0.50em;
+    padding: 0 1.80em;
+}
+
+.main-text .text {
+    font-size: 1rem;
+    color: #151515;
 }
 
 .main-text h3,
-h3 {
+.recent-text {
     font-weight: 700;
     font-size: 1.05rem;
 }
 
-h3 {
+.recent-text {
     text-align: center;
     margin-bottom: 1em;
 }
+
+
+/* About Me */
+.erikka-img {
+    margin-top: 1em;
+    width: 150px;
+    height: 150px;
+    transform: rotate(25deg);
+    background-color: transparent;
+}
+
+@media(min-width: 414px) {
+
+    .author {
+        display: flex;
+        flex-direction: row;
+        justify-content: first;
+    }
+    .intro,
+    .intro-text {
+        max-width: 70%;
+    }
+
+    .intro-wrap {
+        padding-top: 1em;
+    }
+
+    .erikka-img {
+       margin: 0 2em 0 1em;
+
+    }
+
+    .main-text,
+    .home-hero {
+        margin: 1em 5em 0px 5em;
+        max-width: 90%;
+    }
+
+    .hero-img-wrapper {
+        margin: 0 3em;
+    }
+
+    .hero-home .text {
+        margin-bottom: 0;
+    }
+
+    .hero-img {
+        height: 600px;
+    }
+   
+}
+

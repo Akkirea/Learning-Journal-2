@@ -3,11 +3,13 @@ import data from './data.js'
 const cardContainer = document.getElementById('card-container')
 const viewLess = document.getElementById('view-less')
 const viewMore = document.getElementById('view-more')
+const author = document.getElementById('author')
+const homeHero = document.getElementById('home-hero')
 let cardArr = []
 
 // Get Card Array from /Data.js and create HTML
 cardArr = data.slice(0,3).map(function(article){
-    return  `<div class="card-container" id="card-container">
+    return  `<div class="card" id="card">
             <img class="image" src="${article.img}"/>
              <p class="date">${article.date}</p>
             <h2 class="title">${article.title}</h2>
@@ -25,13 +27,13 @@ document.addEventListener('click', function(e){
         viewAll()
     } else if (e.target.id === 'view-less') {
         showLess()
-    }
+    } 
 })
 
 
 function viewAll() {
     cardArr = data.map(function(article){
-                return  `<div class="card-container" id="card-container">
+                return  `<div class="card" id="card">
                         <img class="image" src="${article.img}"/>
                          <p class="date">${article.date}</p>
                         <h2 class="title">${article.title}</h2>
@@ -47,7 +49,7 @@ function viewAll() {
 
 function showLess() {
     cardArr = data.slice(0,3).map(function(article){
-                return  `<div class="card-container" id="card-container">
+                return  `<div class="card" id="card">
                         <img class="image" src="${article.img}"/>
                          <p class="date">${article.date}</p>
                         <h2 class="title">${article.title}</h2>

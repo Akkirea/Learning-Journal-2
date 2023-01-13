@@ -8,6 +8,7 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
     width: 100%;
+    overflow-x: hidden;
 }
 
 /* Layout */
@@ -80,7 +81,6 @@ li {
 
 .text{
     font-size: 1.10rem;
-    min-width: 414px;
 }
 
 /* Card Container */
@@ -136,7 +136,7 @@ width: 100%;
     display: none;
 }
 
-@media (min-width: 414px ) {
+@media (min-width: 675px) {
     .card-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -156,10 +156,6 @@ width: 100%;
         background-position: 30% 60%;
         padding: 12em 1em 1em 2em;
     }
-    .hero .text {
-        max-width: 600px;
-    }
-
 }
 
 /* Footer */
@@ -240,7 +236,6 @@ margin-bottom: 0;
     margin-bottom: 1em;
 }
 
-
 /* About Me */
 .erikka-img {
     margin-top: 1em;
@@ -250,7 +245,7 @@ margin-bottom: 0;
     background-color: transparent;
 }
 
-@media(min-width: 414px) {
+@media(min-width: 480px) {
 
     .author {
         display: flex;
@@ -259,7 +254,7 @@ margin-bottom: 0;
     }
     .intro,
     .intro-text {
-        max-width: 70%;
+        /* min-width: 70%; */
     }
 
     .intro-wrap {
@@ -268,7 +263,6 @@ margin-bottom: 0;
 
     .erikka-img {
        margin: 0 2em 0 1em;
-
     }
 
     .main-text,

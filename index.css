@@ -182,7 +182,7 @@ margin-bottom: 0;
 
 .home-hero,
 .author {
-    padding: 1em 1.25em 1em 1.25em;
+    padding: 1.5em 1.25em 1em 1.25em;
 }
 
 .home-hero h1{
@@ -237,10 +237,12 @@ margin-bottom: 0;
 }
 
 /* About Me */
+
 .erikka-img {
-    margin-top: 1em;
-    width: 150px;
-    height: 150px;
+    margin-top: 2em;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
     transform: rotate(25deg);
 }
 
@@ -250,10 +252,6 @@ margin-bottom: 0;
         display: flex;
         flex-direction: row;
         justify-content: first;
-    }
-    .intro,
-    .intro-text {
-        /* min-width: 70%; */
     }
 
     .intro-wrap {

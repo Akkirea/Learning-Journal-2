@@ -242,7 +242,6 @@ margin-bottom: 0;
     width: 150px;
     height: 150px;
     transform: rotate(25deg);
-    background-color: transparent;
 }
 
 @media(min-width: 480px) {
@@ -263,6 +262,7 @@ margin-bottom: 0;
 
     .erikka-img {
        margin: 0 2em 0 1em;
+       background-color: antiquewhite;
     }
 
     .main-text,
@@ -285,3 +285,8 @@ margin-bottom: 0;
    
 }
 
+@media(min-width: 768px) {
+    .intro-text {
+        padding-right: 4em;
+    }
+}

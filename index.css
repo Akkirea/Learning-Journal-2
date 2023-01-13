@@ -74,13 +74,13 @@ li {
 
 .hero h1{
     font-weight: 700;
-    font-size: 2.10rem;
+    font-size: 2rem;
     margin: 0.5em 0 0.5em 0;
     line-height: 1;
 }
 
 .text{
-    font-size: 1.10rem;
+    font-size: 1rem;
 }
 
 /* Card Container */
@@ -288,5 +288,13 @@ margin-bottom: 0;
 @media(min-width: 768px) {
     .intro-text {
         padding-right: 4em;
+    }
+
+    .hero h1{
+        font-size: 2.10rem;
+    }
+
+    .text{
+        font-size: 1.10rem;
     }
 }
